@@ -1,6 +1,7 @@
 import React from 'react'
+import {FaFacebook,FaInstagram,FaYoutube,FaTwitter,FaLinkedin} from 'react-icons/fa'
 import {Button} from '../gloabalStyles'
-import {FooterContainer,FooterSubscriptions,FooterSubHeading,FooterSubText,Form,FormInput} from './Footer.element';
+import {FooterContainer,FooterSubscriptions,FooterSubHeading,FooterSubText,Form,FormInput,FooterLinksContainer,FooterLinksWrapper,FooterLinksItem,FooterLinkTitle,FooterLink,SocialMedia,SocialMediaWrap,SocialLogo,SocialIcon,WebsiteRights,SocialIcons,SocailIconsLink} from './Footer.element';
 function Footer() {
     return (
         <FooterContainer>
@@ -34,6 +35,9 @@ function Footer() {
                         <FooterLink to="signup">Investors</FooterLink>
                         <FooterLink to="signup">Terms of service</FooterLink>
                     </FooterLinksItem>
+                    <FooterLinksWrapper>
+                        
+                    </FooterLinksWrapper>
                     <FooterLinksItem>
                         <FooterLinkTitle>Video</FooterLinkTitle>
                         <FooterLink to="signup">How it works</FooterLink>
@@ -52,6 +56,34 @@ function Footer() {
                     </FooterLinksItem>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
+            <SocialMedia>
+                <SocialMediaWrap>
+                    <SocialLogo to="/">
+                        <SocialIcon/>
+                            ULTRA
+                    </SocialLogo>
+                    <WebsiteRights>
+                        ULTRA 2020
+                    </WebsiteRights>
+                    <SocialIcons>
+                        <SocailIconsLink href='/' target='_blank' arial-laberl='Facebook'>
+                            <FaFacebook/>
+                        </SocailIconsLink>
+                        <SocailIconsLink href='/' target='_blank' arial-laberl='Instagram'>
+                            <FaInstagram/>
+                        </SocailIconsLink>
+                        <SocailIconsLink href='/' target='_blank' arial-laberl='Youtube'>
+                            <FaYoutube/>
+                        </SocailIconsLink>
+                        <SocailIconsLink href='/' target='_blank' arial-laberl='Twitter'>
+                            <FaTwitter/>
+                        </SocailIconsLink>
+                        <SocailIconsLink href='/' target='_blank' arial-laberl='Linkedin'>
+                            <FaLinkedin/>
+                        </SocailIconsLink>
+                    </SocialIcons>
+                </SocialMediaWrap>
+            </SocialMedia>
         </FooterContainer>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { homeObjOne,homeObjTwo,homeObjThere,homeObjFour } from './Data'
-import { InfoSection} from '../../components';
+import { InfoSection, Pricing} from '../../components';
 
 function Home() {
     return (
@@ -8,9 +8,10 @@ function Home() {
             <InfoSection {...homeObjOne} />
             <InfoSection {...homeObjTwo} />
             <InfoSection {...homeObjThere} />
+            <Pricing/>
             <InfoSection {...homeObjFour} />
         </>
-    )
-}
+    );
+};
 
 export default Home
